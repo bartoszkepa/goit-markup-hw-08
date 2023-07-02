@@ -1,0 +1,14 @@
+.logo {
+  font-family: $font-family-secondary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $color-text-hover;
+
+  &--studio-header {
+    color: $color-text-primary;
+  }
+  &--studio-footer {
+    color: $color-text-secendary;
+  }
+}

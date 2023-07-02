@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+body {
+  font-family: $font-family-primary;
+  background: $color-text-secendary;
+  color: $color-text-primary;
+}
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: $color-text-secendary;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-top: 106px;
+  max-width: 696px;
+}
+h2 {
+  font-family: $font-family-primary;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+h3 {
+  font-family: $font-family-primary;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+p {
+  font-family: $font-family-primary;
+  font-size: 14px;
+  line-height: 1.87;
+  color: $color-text-link;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  margin: 0 auto;
+  max-width: 480px;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
+}

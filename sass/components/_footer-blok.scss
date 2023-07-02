@@ -1,0 +1,10 @@
+.main-footer {
+  background: $color-background-main-first-footer;
+}
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  gap: 70px;
+  justify-content: space-between;
+}

@@ -1,0 +1,30 @@
+.header-background {
+  background: $color-background-page-color;
+  border-bottom: 1px solid $color-border-bottom-first;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__nav {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+  &__bookmarks {
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+    align-items: center;
+    margin-left: 93px;
+  }
+}
+.kontact {
+  display: flex;
+  gap: 50px;
+
+  &__icon {
+    margin-right: 10px;
+  }
+}

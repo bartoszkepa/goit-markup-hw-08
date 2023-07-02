@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  gap: 30px;
+
+  &__person {
+    background: $color-background-page-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+  }
+  &__name {
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  &__job {
+    font-size: 16px;
+    padding-bottom: 16px;
+  }
+  &__product {
+    background: var(--color-text-secendary);
+    border: 1px solid rgb(238, 238, 238);
+    transition: box-shadow, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__product:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &__product:hover .card-discription {
+    transform: translateY(0);
+  }
+}
+.card--content {
+  justify-content: space-between;
+}
+.card--mode {
+  flex-wrap: wrap;
+  padding-top: 50px;
+  justify-content: center;
+}

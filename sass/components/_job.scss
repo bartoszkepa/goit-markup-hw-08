@@ -1,0 +1,20 @@
+.container-job {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  &__img {
+    position: relative;
+    max-height: 294px;
+  }
+  &__img-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: $color-text-secendary;
+    text-align: center;
+    padding: 27px;
+    background: $color-background-img-wedo;
+  }
+}
