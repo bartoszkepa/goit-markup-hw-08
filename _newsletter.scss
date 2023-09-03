@@ -1,0 +1,41 @@
+.newsletter-block {
+  padding-left: 7px;
+  margin-top: 12px;
+
+  @include tablet {
+    padding-left: 151px;
+    padding-right: 137px;
+    margin-top: 0px;
+  }
+  @include desktop {
+    padding-left: 7px;
+    padding-right: 0px;
+    margin-top: 12px;
+    margin-bottom: 50px;
+  }
+  &__title {
+    font-size: 14px;
+    color: $color-text-secendary;
+    margin-bottom: 20px;
+    letter-spacing: 0.42px;
+
+    @include desktop {
+      text-align: start;
+      font-size: 16px;
+    }
+  }
+  &__icon {
+    fill: $color-background-fill-color-first;
+  }
+
+  &--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

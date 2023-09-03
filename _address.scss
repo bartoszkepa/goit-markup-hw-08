@@ -1,0 +1,30 @@
+.block-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include tablet {
+    margin-left: 61px;
+  }
+  @include desktop {
+    align-items: start;
+    margin-left: 0px;
+  }
+}
+
+.address {
+  color: $color-text-secendary;
+  font-style: normal;
+  font-size: 14px;
+  margin-top: 20px;
+  line-height: 1.71;
+  text-align: center;
+
+  @include desktop {
+    text-align: start;
+  }
+}
+
+.address > li {
+  padding-top: 9px;
+}

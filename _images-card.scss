@@ -1,0 +1,33 @@
+.images-card {
+  position: relative;
+  overflow: hidden;
+
+  &__discription {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: $color-background-hover;
+    color: $color-text-secendary;
+    padding: 49px 45px 49px 24px;
+    font-size: 18px;
+    line-height: 1.55;
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__title {
+    padding-top: 20px;
+    padding-left: 24px;
+    font-size: 18px;
+  }
+  &__text {
+    padding: 4px 24px 20px 24px;
+    font-size: 16px;
+  }
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover &__discription {
+    transform: translateY(0);
+  }
+}
