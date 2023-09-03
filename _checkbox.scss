@@ -1,0 +1,43 @@
+.checkbox {
+  font-size: 12px;
+  line-height: 1.71;
+  gap: 7px;
+  margin-top: 20px;
+  align-items: center;
+  display: flex;
+
+  @include desktop {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-left: 14px;
+  }
+
+  &__input {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  &__icon {
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    fill: $color-fill-icon;
+    border: 0.2px solid rgba(33, 33, 33, 1);
+  }
+  &__icon::after {
+    content: '';
+    background: $color-background-page-color;
+    border: 0.2px solid $color-border-icon;
+  }
+  &__input:checked + &__icon {
+    border-color: $color-border-input-hover;
+    background-color: $color-background-button;
+  }
+  &__input:checked + &__icon::after {
+    fill: $color-fill-icon;
+    border: 0.2px solid rgba(33, 33, 33, 1);
+  }
+  .checkbox > a {
+    color: $color-text-hover;
+    text-decoration: underline;
+  }
+}
