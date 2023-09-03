@@ -12,6 +12,7 @@
 }
 
 .button-signup {
+  align-items: center;
   min-width: 200px;
   line-height: 1.87;
   background: $color-background-button;
@@ -48,12 +49,16 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 10px 76px;
-  margin: 30px 144px 40px;
+  margin: 30px 85px 40px 85px;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
   justify-content: center;
   letter-spacing: 0.06em;
+
+  @include desktop {
+    margin: 30px 124px 40px;
+  }
 }
 .button-secendary {
   font-family: $font-family-primary;

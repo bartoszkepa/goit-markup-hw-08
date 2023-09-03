@@ -1,12 +1,16 @@
 .checkbox {
-  display: flex;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin-left: 14px;
   gap: 7px;
   margin-top: 20px;
   align-items: center;
+  display: flex;
+
+  @include desktop {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-left: 14px;
+  }
 
   &__input {
     position: absolute;

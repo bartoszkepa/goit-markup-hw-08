@@ -2,19 +2,23 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: $color-background-fill-color-first;
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
+
   &__title {
     font-size: 20px;
     letter-spacing: 0.03em;
-    margin-top: 40px;
-    margin-bottom: 12px;
+    margin: 40px 40px 20px 40px;
   }
   &__label {
     line-height: 1.17;
@@ -43,11 +47,12 @@
     padding-bottom: 14px;
   }
   &__icon {
-    margin-left: 15px;
+    margin-left: 12px;
     position: absolute;
     left: 0;
     top: 20px;
-    margin-top: 14px;
+    margin-top: 11px;
+    margin-bottom: 11px;
   }
   &__imput:hover,
   &__imput:focus {
@@ -60,4 +65,5 @@
 }
 .close-btn--icon {
   background-color: $color-background-fill-color-first;
+  margin: 6px 6px;
 }

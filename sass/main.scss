@@ -1,9 +1,9 @@
 @import 'utils/variables';
-@import 'utils/mixins.scss';
-@import 'utils/globals.scss';
+@import 'utils/mixins';
+@import 'utils/globals';
 @import 'components/our-clients';
-@import 'components/card';
-@import 'components/icon-our-client';
+@import 'components/card-team';
+@import 'components/our-customers';
 @import 'components/section';
 @import 'components/button';
 @import 'components/main-first';
@@ -25,3 +25,5 @@
 @import 'components/checkbox';
 @import 'components/images-card';
 @import 'components/button-cont';
+@import 'components/mobile-menu';
+@import 'components/textarea';

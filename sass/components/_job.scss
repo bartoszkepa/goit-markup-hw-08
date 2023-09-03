@@ -1,3 +1,19 @@
+.section-job {
+  padding: 94px 0px;
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
+  &__title {
+    font-family: $font-family-primary;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
 .container-job {
   display: flex;
   justify-content: space-between;

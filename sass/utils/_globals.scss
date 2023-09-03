@@ -15,18 +15,24 @@ button {
 }
 body {
   font-family: $font-family-primary;
-  background: $color-text-secendary;
-  color: $color-text-primary;
+  background: $color-background-page-color;
+  color: #212121;
 }
 h1 {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   color: $color-text-secendary;
   text-align: center;
   letter-spacing: 0.06em;
-  margin-top: 106px;
-  max-width: 696px;
+  margin-top: 24px;
+  max-width: 365px;
+
+  @include desktop{
+    font-size: 44px;
+    max-width: 696px;
+    margin-top: 106px;
+  }
 }
 h2 {
   font-family: $font-family-primary;
@@ -55,6 +61,8 @@ img {
 .container {
   margin: 0 auto;
   max-width: 480px;
+  padding: 0 15px;
+  // width: 100%;
 
   @include tablet {
     max-width: 768px;

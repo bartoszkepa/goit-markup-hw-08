@@ -9,22 +9,49 @@
 
   &__nav {
     display: flex;
+    padding: 10px 0;
+    @include tablet{
+      padding: 21px 0;
+    }
+    @include desktop {
     padding-top: 24px;
     padding-bottom: 25px;
+    }
   }
   &__bookmarks {
     display: flex;
+    display: none;
+
+    @include tablet {
+   display: flex;
     justify-content: center;
     gap: 46px;
     align-items: center;
+    margin-left: 83px;
+  }
+  @include desktop {
     margin-left: 93px;
   }
 }
+}
 .kontact {
   display: flex;
-  gap: 50px;
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  gap: 10px;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
 
   &__icon {
     margin-right: 10px;
   }
 }
+
